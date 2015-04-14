@@ -1,7 +1,7 @@
 {
-  "name": "GameOfLife",
+  "name": "Game-Of-Life-React",
   "version": "0.0.1",
-  "description": "React Workshop",
+  "description": "The code from the mini React workshop @SkillsMatter",
   "repository": {
     "type": "git",
     "url": "https://github.com/SamuraiPrinciple/Game-Of-Life-React.git"
