@@ -22,15 +22,17 @@
 		<script src="spec/game-of-life.js"></script>
 		<script src="spec/game-of-life-jquery.js"></script>
 		<script type="text/jsx" src="spec/game-of-life-react.js"></script>
-		<div id='gameOfLifeWidget'>
-			<div class='grid'></div>
-			<button class='tick'>tick</button>
-		</div>
     <div id="gameOfLifeReact"></div>
+    <div style="display: none">
+			<div id='gameOfLifeWidget'>
+				<div class='grid'></div>
+				<button class='tick'>tick</button>
+			</div>
+		</div>
 		<script>
 			jQuery(function () {
 				var gameOfLife = new SAMURAIPRINCIPLE.GameOfLife();
-				//jQuery('#gameOfLifeWidget').gameOfLifeWidget(gameOfLife, 10, 10, 250);
+				jQuery('#gameOfLifeWidget').clone().appendTo('body').gameOfLifeWidget(gameOfLife, 10, 10, 250);
 			});
 		</script>
     <script type="text/jsx">
