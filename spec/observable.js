@@ -1,5 +1,5 @@
 /*global beforeEach, describe, expect, it, SAMURAIPRINCIPLE */
-describe('observable', function () {
+describe('Observable', function () {
   'use strict';
   it('should use eventDispatcher as a mixin', function () {
     var base = {}, result;
