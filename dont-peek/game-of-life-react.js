@@ -1,4 +1,4 @@
-var GameOfLife = React.createClass({
+var GameOfLifeComponent = React.createClass({
   getCurrentState: function () {
     var self = this;
     return {
