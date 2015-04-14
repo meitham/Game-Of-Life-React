@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Game of Life</title>
+		<link rel="shortcut icon" type="image/png" href="lib/jasmine-2.0.0/jasmine_favicon.png">
+		<link rel="stylesheet" type="text/css" href="lib/jasmine-2.0.0/jasmine.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<script src="lib/jquery-1.10.2.js"></script>
+		<script src="lib/jquery-ui-1.10.3.custom.js"></script>
+    <script src="lib/react-with-addons.js"></script>
+    <script src="lib/JSXTransformer.js"></script>
+		<script src="lib/jasmine-2.0.0/jasmine.js"></script>
+		<script src="lib/jasmine-2.0.0/jasmine-html.js"></script>
+		<script src="lib/jasmine-2.0.0/boot.js"></script>
+		<script src="lib/sinon-1.7.3.js"></script>
+		<script src="src/observable.js"></script>
+		<script src="src/game-of-life.js"></script>
+		<script src="src/game-of-life-jquery.js"></script>
+		<script type="text/jsx" src="src/game-of-life-react.js"></script>
+		<script src="spec/game-of-life.js"></script>
+		<script src="spec/game-of-life-jquery.js"></script>
+		<script type="text/jsx" src="spec/game-of-life-react.js"></script>
+		<div id='gameOfLifeWidget'>
+			<div class='grid'></div>
+			<button class='tick'>tick</button>
+		</div>
+    <div id="gameOfLifeReact"></div>
+		<script>
+			jQuery(function () {
+				var gameOfLife = new SAMURAIPRINCIPLE.GameOfLife();
+				//jQuery('#gameOfLifeWidget').gameOfLifeWidget(gameOfLife, 10, 10, 250);
+			});
+		</script>
+    <script type="text/jsx">
+      React.render(<GameOfLife rows="10" columns="10" />, document.getElementById('gameOfLifeReact'));
+    </script>
+	</body>
+</html>
