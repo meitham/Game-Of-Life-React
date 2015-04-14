@@ -10,3 +10,5 @@ To run the spec runner/app:
 ````
 grunt
 ````
+
+Alternatively, have this folder served using any web server.
